@@ -31,17 +31,17 @@
             </button>
           </div>
         </form>
-        <div class="search/filter-container">
+        <div class="search-filter-container">
           <div class="search-todo">
             <label for="seacrh-input">Pesquisar:</label>
             <input type="text" id="search-input" placeholder="Buscar..." />
-            <button id="erase-button">
+            <button id="erase-btn">
               <i class="fa-solid fa-delete-left"></i>
             </button>
           </div>
           <div class="filter-todo">
             <label for="filter-select">Filtrar:</label>
-            <select name="filter-select" id="filter-select">
+            <select id="filter-select">
               <option value="todos" selected>Todos</option>
               <option value="feitos">Feitos</option>
               <option value="a_fazer">A fazer</option>
@@ -49,29 +49,29 @@
           </div>
         </div>
         <div class="todo-list">
-          <div class="todo">
-            <h3>Atividade a ser feita</h3>
-            <button class="finish-todo">
+          <div class="todo checked">
+            <h4>Atividade já feita</h4>
+            <button id="finish-btn">
               <i class="fa-solid fa-check"></i>
             </button>
             <button class="edit-todo"><i class="fa-solid fa-pen"></i></button>
-            <button class="remove-todo">
+            <button id="remove-btn">
               <i class="fa-solid fa-xmark"></i>
             </button>
           </div>
           <div class="todo">
-            <h3>Atividade a ser feita</h3>
-            <button class="finish-todo">
+            <h4>Atividade a ser feita amanhã de manhã por mim</h4>
+            <button id="finish-btn">
               <i class="fa-solid fa-check"></i>
             </button>
             <button class="edit-todo"><i class="fa-solid fa-pen"></i></button>
-            <button class="remove-todo">
+            <button id="remove-btn">
               <i class="fa-solid fa-xmark"></i>
             </button>
           </div>
         </div>
       </section>
-      <section class="edit-section">
+      <section class="edit-section hide">
         <form id="edit-form">
           <label for="edit-input">Edite sua tarefa:</label>
           <div class="edit-todo">
@@ -79,8 +79,8 @@
             <button type="submit" id="edit-todo-btn">
               <i class="fa-solid fa-check-double"></i>
             </button>
+            <button id="cancel-edit-btn">Cancelar</button>
           </div>
-          <button id="cancel-edit-btn">Cancelar</button>
         </form>
       </section>
     </div>
