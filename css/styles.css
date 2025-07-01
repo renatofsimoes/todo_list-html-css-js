@@ -25,7 +25,8 @@ div:not(
     .todo-list,
     .search-todo,
     .filter-todo,
-    .edit-todo
+    .edit-todo,
+    .btns-container
   ) {
   border-bottom: 1px solid #b1b2b5;
 }
@@ -36,7 +37,8 @@ div:not(
     .filter-todo,
     .todo-list,
     .todo,
-    .edit-todo
+    .edit-todo,
+    .btns-container
   ) {
   padding: 25px 0;
 }
@@ -133,8 +135,8 @@ header h1 {
 
 .todo {
   display: flex;
-  gap: 10px;
   align-items: center;
+  justify-content: space-between;
   width: 400px;
   padding: 10px 10px;
   border-radius: 2px;
@@ -147,9 +149,14 @@ header h1 {
   width: 30px;
   height: 30px;
 }
-#finish-btn {
+.finish-btn {
   margin-left: auto;
 }
+.btns-container {
+  display: flex;
+  gap: 10px;
+}
+
 .checked {
   background-color: #061759;
   color: #fff;
@@ -161,12 +168,27 @@ header h1 {
   border-top: 1px solid #b1b2b5;
   padding-top: 20px;
 }
+.edit-todo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+#edit-todo-btn {
+  width: 30px;
+  height: 30px;
+}
 #cancel-edit-btn {
   display: block;
   margin-top: 15px;
   font-weight: bold;
 }
-#edit-input {
+#edit-text-area {
   width: 300px;
   margin-top: 10px;
+}
+#edit-text-area {
+  min-height: 80px;
+  height: auto;
+  overflow-y: hidden;
+  resize: none;
 }

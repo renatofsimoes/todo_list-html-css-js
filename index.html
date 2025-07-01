@@ -26,14 +26,14 @@
               id="todo-input"
               placeholder="O que você vai fazer?"
             />
-            <button type="sumbit" id="add-todo-btn">
+            <button type="submit" id="add-todo-btn">
               <i class="fa-solid fa-plus"></i>
             </button>
           </div>
         </form>
         <div class="search-filter-container">
           <div class="search-todo">
-            <label for="seacrh-input">Pesquisar:</label>
+            <label for="search-input">Pesquisar:</label>
             <input type="text" id="search-input" placeholder="Buscar..." />
             <button id="erase-btn">
               <i class="fa-solid fa-delete-left"></i>
@@ -48,39 +48,18 @@
             </select>
           </div>
         </div>
-        <div class="todo-list">
-          <div class="todo checked">
-            <h4>Atividade já feita</h4>
-            <button id="finish-btn">
-              <i class="fa-solid fa-check"></i>
-            </button>
-            <button class="edit-todo"><i class="fa-solid fa-pen"></i></button>
-            <button id="remove-btn">
-              <i class="fa-solid fa-xmark"></i>
-            </button>
-          </div>
-          <div class="todo">
-            <h4>Atividade a ser feita amanhã de manhã por mim</h4>
-            <button id="finish-btn">
-              <i class="fa-solid fa-check"></i>
-            </button>
-            <button class="edit-todo"><i class="fa-solid fa-pen"></i></button>
-            <button id="remove-btn">
-              <i class="fa-solid fa-xmark"></i>
-            </button>
-          </div>
-        </div>
+        <div class="todo-list"></div>
       </section>
       <section class="edit-section hide">
         <form id="edit-form">
-          <label for="edit-input">Edite sua tarefa:</label>
+          <label for="edit-text-area">Edite sua tarefa:</label>
           <div class="edit-todo">
-            <input type="text" id="edit-input" />
+            <textarea id="edit-text-area"></textarea>
             <button type="submit" id="edit-todo-btn">
               <i class="fa-solid fa-check-double"></i>
             </button>
-            <button id="cancel-edit-btn">Cancelar</button>
           </div>
+          <button type="button" id="cancel-edit-btn">Cancelar</button>
         </form>
       </section>
     </div>
